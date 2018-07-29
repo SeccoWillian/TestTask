@@ -1,0 +1,13 @@
+
+<mat-toolbar>New Task</mat-toolbar>
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Title" [(ngModel)]="reg.title" name="title" required>
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <textarea matInput placeholder="Description" [(ngModel)]="reg.content" name="content" required></textarea>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="save()">SAVE</button>
+  </form>
